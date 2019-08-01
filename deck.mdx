@@ -1,0 +1,395 @@
+import { Image } from "mdx-deck";
+import Layout from "./Layout";
+
+import { dark } from "@mdx-deck/themes";
+
+export const theme = dark;
+
+# Intro to Chaos Engineering
+
+Lunch & Learn / Artsy / 2019-08-01
+
+---
+
+<Layout>
+
+## What is Chaos Engineering?
+
+</Layout>
+
+---
+
+<Layout>
+
+<Image
+  src='https://images.unsplash.com/photo-1519971585408-420d17643586'
+  style={{
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  color: 'white',
+  backgroundColor: 'black',
+  }}>
+
+> Chaos Engineering is a disciplined approach to identify
+> potential failures before they become outages.
+
+</Image>
+
+</Layout>
+
+---
+
+<Layout>
+
+<Image
+  src='https://images.unsplash.com/photo-1519971585408-420d17643586'
+  style={{
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  color: 'white',
+  backgroundColor: 'black',
+  }}>
+
+> Breaking things on purpose to make them more resilient against failure.
+
+</Image>
+
+</Layout>
+
+---
+
+<Layout>
+
+<Image
+  src='https://images.unsplash.com/photo-1522731135058-7999f3549ba6'
+  style={{
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  color: 'white',
+  backgroundColor: 'black',
+  }}>
+
+<div style={{ padding: "50px" }}>
+
+### A brief history of Chaos Engineering
+
+</div>
+
+</Image>
+
+</Layout>
+
+---
+
+<Layout>
+
+<Image
+  src='https://images.unsplash.com/photo-1536742875002-822b7f87b140'
+  style={{
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  color: 'white',
+  backgroundColor: 'black',
+  }}>
+
+<div style={{ padding: "50px", maxWidth: "70%" }}>
+
+### 2010: The Netflix Eng Tools team created Chaos Monkey
+
+</div>
+
+</Image>
+
+</Layout>
+
+---
+
+<Layout>
+
+<Image
+  src='https://res.cloudinary.com/gremlin/image/upload/c_limit,q_80,w_2000/SimianArmy.png'
+  style={{
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  color: 'white',
+  backgroundColor: 'black',
+  }}>
+
+<div style={{ padding: "50px" }}>
+
+### 2011: The Simian Army was born
+
+</div>
+
+</Image>
+
+</Layout>
+
+---
+
+<Layout>
+
+  <Image
+  src='https://i.imgur.com/81QMMYm.png'
+  style={{
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  color: 'black',
+  backgroundColor: 'white',
+  }}>
+
+### 2012: Chaos Monkey on GitHub
+
+</Image>
+</Layout>
+
+---
+
+<Layout>
+
+  <div style={{ padding: "50px", maxWidth: "70%" }}>
+
+> Netflix shared the source code for Chaos Monkey on Github saying that they
+> "have found that the best defense against major unexpected failures is to fail often. By frequently causing failures, we force our services to be built in a way that is more resilient"
+
+</div>
+</Layout>
+
+---
+
+<Layout>
+
+### 2014: Birth of the Chaos Engineer
+
+</Layout>
+
+---
+
+<Layout>
+
+  <Image
+  src='https://images.unsplash.com/photo-1506443102696-39d0c10eae2b'
+  style={{
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  color: 'white',
+  backgroundColor: 'black',
+  }}>
+
+## Principles of Chaos Engineering
+
+</Image>
+
+</Layout>
+
+---
+
+<Layout>
+
+<ol>
+  <li>Plan an Experiment</li>
+</ol>
+
+</Layout>
+
+---
+
+<Layout>
+  <div style={{ padding: "50px" }}>
+    Create a hypothesis. What could go wrong?
+  </div>
+</Layout>
+
+---
+
+<Layout>
+
+<ol>
+  <li>Plan an Experiment</li>
+  <li>Contain the Blast Radius</li>
+</ol>
+
+</Layout>
+
+---
+
+<Layout>
+  <div style={{ padding: "50px" }}>
+    Execute the smallest test that will teach you something.
+  </div>
+</Layout>
+
+---
+
+<Layout>
+
+<ol>
+  <li>Plan an Experiment</li>
+  <li>Contain the Blast Radius</li>
+  <li>Scale or squash</li>
+</ol>
+
+</Layout>
+
+---
+
+<Layout>
+  <div style={{ padding: "50px", maxWidth: "70%" }}>
+    Find an issue? Job well done. Otherwise increase the blast radius until
+    you're at full scale.
+  </div>
+</Layout>
+
+---
+
+<Layout>
+
+<div style={{ maxWidth: "70%" }}>
+
+## What are the customer, business, and technical benefits of Chaos Engineering?
+
+</div>
+
+</Layout>
+
+---
+
+<Layout>
+  <div style={{ padding: "50px" }}>
+    Customer: the increased availability and durability of service means no
+    outages disrupt their day-to-day lives.
+  </div>
+</Layout>
+
+---
+
+<Layout>
+  <div style={{ padding: "50px" }}>
+    Business: Chaos Engineering can help...
+    <div style={{ marginTop: "40px" }}>
+      <ul>
+        <li>
+          help prevent extremely large losses in revenue and maintenance costs
+        </li>
+        <li>create happier and more engaged engineers</li>
+        <li>improve in on-call training for engineering teams</li>
+      </ul>
+    </div>
+  </div>
+</Layout>
+
+---
+
+<Layout>
+  <div style={{ padding: "50px" }}>
+    Technical: the insights from chaos experiments can mean a...
+    <div style={{ marginTop: "40px" }}>
+    <ul>
+      <li>reduction in incidents</li>
+      <li>reduction in on-call burden</li>
+      <li>increased understanding of system failure modes</li>
+      <li>improved system design</li>
+      <li>faster mean time to detection for incidents</li>
+      <li>reduction in repeated SEVs</li>
+    </ul>
+      </div>
+
+  </div>
+</Layout>
+
+---
+
+<Layout>
+
+  <Image
+  src='https://images.unsplash.com/photo-1530803665205-888f969e6e2a'
+  style={{
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  color: 'white',
+  backgroundColor: 'black',
+  }}>
+
+## Introduction to Game Days
+
+</Image>
+</Layout>
+
+---
+
+<Image
+  src='https://images.unsplash.com/photo-1543816954-1e9d3d4ba69d'
+  style={{
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  color: 'white',
+  backgroundColor: 'black',
+  }}>
+
+> Gamedays are like fire drills -- an opportunity to practice a potentially
+> dangerous scenario in a safer environment.
+
+</Image>
+
+---
+
+<Layout>
+
+<ol>
+  <li>Start small</li>
+  <Appear>
+    <li>Dial it up</li>
+    <li>Run in Prod</li>
+  </Appear>
+</ol>
+
+</Layout>
+
+---
+
+<Image
+  src='https://images.unsplash.com/photo-1485546246426-74dc88dec4d9'
+  style={{
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  color: 'white',
+  backgroundColor: 'black',
+  }}>
+
+## RUN IN PROD??!!
+
+</Image>
+
+---
+
+> The end goal of any Gameday is to run in Production.
+
+---
+
+> It's production that matters at the end of the day.
+
+---
+
+> That's where customers live, where the money is made.
+
+---
+
+> It's production's configuration that counts if things go wrong.
+
+---
+
+> Many systems are tuned for the ‘happy-case', and find themselves woefully unprepared when failure strikes.
+
+---
+
+### Workshop Time!! Let's break some stuff!
